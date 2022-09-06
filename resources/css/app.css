@@ -5,7 +5,7 @@
 @layer components {
 
     .navbar-button {
-        @apply text-white;
+        @apply text-white transition-all hover:text-yellow-500;
     }
 
 }

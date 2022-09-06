@@ -1,14 +1,43 @@
 @extends('layouts.layout-master')
-@section('title', 'UNO DOS TRES')
+@section('title', ' ')
 
 @section('content')
 
-<h1 class="navbar-button">HOLA MUNDO!</h1>
+<header class=" bg-black text-white">
+    <div class=" flex items-center px-7 py-4">
+
+        <nav id="nav" class="flex grow basis-0 fixed top-0 mt-[72px]  bottom-0 -right-full lg:mt-0 lg:static w-3/4 transition-all duration-500">
+            <ul class=" w-full bg-black flex flex-col justify-center items-center lg:flex-row">
+                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
+                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
+                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
+                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex grow basis-0">
+            <img class=" w-36 object-cover" src="assets/images/logo.png" alt="">
+        </div>
+
+        <div class="flex grow basis-0 justify-end lg:hidden">
+            <button id="button-nav" class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+</header>
+
 
 @endsection
 
 @section('scripts')
 
+    @vite(['resources/js/animation_user/home.js', 'resources/js/user/home.js'])
+
+    
     {{-- @vite(['resources/js/navbar/navbar.js']) --}}
 
 @endsection
