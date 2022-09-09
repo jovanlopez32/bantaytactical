@@ -3,39 +3,69 @@
 
 @section('content')
 
-<header class=" bg-black text-white">
+<header class=" sticky top-0 w-full bg-black text-white z-50">
     <div class=" flex items-center px-7 py-4">
 
         <nav id="nav" class="flex grow basis-0 fixed top-0 mt-[72px]  bottom-0 -right-full lg:mt-0 lg:static w-3/4 transition-all duration-500">
             <ul class=" w-full bg-black flex flex-col justify-center items-center lg:flex-row">
-                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
-                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
-                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
-                <li class=" my-6 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Menu Option</a></li>
+                <li class=" my-4 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Inicio</a></li>
+                <li class=" my-4 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Productos</a></li>
+                <li class=" my-4 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Sucursales</a></li>
+                <li class=" my-4 mx-5 lg:my-0 text-center"><a class=" hover:text-yellow-500" href="#">Nosotros</a></li>
             </ul>
         </nav>
 
         <div class="flex grow basis-0">
             <img class=" w-36 object-cover" src="assets/images/logo.png" alt="">
         </div>
+        
+          
 
         <div class="flex grow basis-0 justify-end lg:hidden">
             <button id="button-nav" class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-                </svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" class="menupath" />
+                </svg> 
             </button>
         </div>
 
     </div>
 </header>
 
+{{-- Slide --}}
+<section class="splide" aria-label="Basic Structure Example">
+   
+    {{-- Botones de navegacion [Flechas] --}}
+    <div class="splide__arrows invisible lg:visible">
+	    <button class="splide__arrow splide__arrow--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 fill-transparent text-black hover:text-[#ed9f20] transition-all duration-200">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+		<button class="splide__arrow splide__arrow--next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 fill-transparent text-black hover:text-[#ed9f20] transition-all duration-200">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>             
+        </button>
+    </div>
+
+    {{-- Navegacion --}}
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+            <li class="splide__slide">Slide 04</li>
+        </ul>
+    </div>
+</section>
+
 
 @endsection
 
 @section('scripts')
 
-    @vite(['resources/js/animation_user/home.js', 'resources/js/user/home.js'])
+    @vite(['resources/js/user/home-slider.js', 'resources/js/user/navbar.js'])
 
     
     {{-- @vite(['resources/js/navbar/navbar.js']) --}}

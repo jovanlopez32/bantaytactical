@@ -4,8 +4,8 @@
 
 @layer components {
 
-    .navbar-button {
-        @apply text-white transition-all hover:text-yellow-500;
+    .slider-buttons-bottom {
+        @apply w-[35px] h-[5px] bg-white hover:bg-[#ed9f20] focus:bg-[#ed9f20] active:bg-[#ed9f20];
     }
 
 }
