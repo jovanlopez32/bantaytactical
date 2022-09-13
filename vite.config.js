@@ -8,7 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/user/home.js',
-                'resources/js/user/navbar.js'
+                'resources/js/user/navbar.js',
+                'resources/js/user/home-slider.js'
 
                     
             ],

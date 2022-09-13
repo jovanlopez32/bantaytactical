@@ -31,4 +31,3 @@ button_nav.addEventListener('click', function(x) {
    !toggle ? toggle=true : toggle=false;
 
 });
-
