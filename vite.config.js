@@ -10,7 +10,6 @@ export default defineConfig({
                 'resources/js/user/home.js',
                 'resources/js/user/navbar.js',
                 'resources/js/user/home-slider.js'
-
                     
             ],
             refresh: true,

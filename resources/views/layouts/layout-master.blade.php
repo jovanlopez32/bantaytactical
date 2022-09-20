@@ -16,6 +16,8 @@
 </head>
 <body class=" min-h-screen">
 
+    @yield('navbar')
+
     @yield('content')
     
     @yield('scripts')
