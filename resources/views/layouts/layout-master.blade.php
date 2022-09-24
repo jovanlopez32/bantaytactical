@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +18,18 @@
 </head>
 <body class=" min-h-screen">
 
-    @yield('navbar')
+    
+    @include('layouts.navbar_ecom')
 
     @yield('content')
     
+   
+
+
+    @include('layouts.footer_ecom')
     @yield('scripts')
 </body>
+
+
+
 </html>

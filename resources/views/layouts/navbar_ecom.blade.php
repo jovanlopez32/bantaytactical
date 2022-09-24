@@ -1,6 +1,3 @@
-@extends('layouts/layout-master')
-
-@section('navbar')
 <header class=" sticky top-0 w-full bg-black text-white z-50">
     <div class=" flex items-center px-7 py-4">
 
@@ -47,4 +44,3 @@
     </div>
 </header>
 
-@endsection
