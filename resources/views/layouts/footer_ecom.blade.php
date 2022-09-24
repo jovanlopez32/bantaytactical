@@ -1,7 +1,7 @@
 
 <footer class=" flex flex-col w-full h-full px-10 bg-black text-white">
 
-    <div class="flex flex-wrap items-center justify-center lg:gap-40">
+    <div class="flex flex-wrap items-center justify-center lg:gap-32">
 
         <div class=" flex flex-col gap-5 py-10 w-96">
             <h3 class=" text-lg font-semibold ">Ingresa tu correo y recibe ofertas e informacion de nuestros productos.</h3>
