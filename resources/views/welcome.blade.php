@@ -102,7 +102,7 @@
     </div>
 
      <div class=" w-full text-start lg:px-32 lg:w-1/2 flex flex-col gap-3 justify-center px-10 h-96">
-        <h1 class=" font-extrabold text-3xl">Bantay Tactical</h1>
+        <h1 class=" font-extrabold text-3xl">Bantay TacteeqWicaewWWl</h1>
         <p>Somos <span class=" bg-yellow-100">proveedores de la mejor ropa y equipo de seguridad</span> del mercado teniendo a disposición un amplio catálogo de productos innovadores siempre con alto estándar de calidad en cada uno de ellos y al precio más competitivo.</p>
      </div>
 </section>
@@ -111,7 +111,7 @@
     <div class=" grid gap-4 py-14 px-10 ">
         <h1 class=" font-extrabold text-2xl">PRODUCTO #1</h1>
         <h2 class="font-light text-lg">Chamarra Tactica Tiburon</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita distinctio excepturi cumque voluptates dicta nesciunt recusandae laudantium amet deserunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. FWWacere expedita distinctio excepturi cumque voluptates dicta nesciunt recusandae laudantium amet deserunt?</p>
         <button class="bg-black text-white rounded-md p-2 my-4 hover:bg-[#ed9f20] transition-all duration-300">Comprar</button>
     </div>
     <div class=" grid gap-3 py-14 px-10">
@@ -129,10 +129,19 @@
 </section> --}}
 
 
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
+<section class="h-full flex flex-wrap">
+    <div class="h-full flex flex-wrap grow basis-0">
+        <div class="px-10 py-24 grow text-center"><h1 class=" font-semibold text-2xl">TITULO DE PRODUCTO</h1></div>
+        <div class="grow lg:basis-0 bg-black">
+            <img class=" object-fill" src="/assets/images/slider/bg-1.jpg" alt="">
+        </div>
+    </div>
+    <div class="h-full flex flex-wrap grow basis-0">
+        <div class="px-10 py-24 grow text-center"><h1 class=" font-semibold text-2xl">TITULO DE PRODUCTO</h1></div>
+        <div class="grow lg:basis-0 bg-black">
+            <img class=" object-fill" src="/assets/images/slider/bg-1.jpg" alt="">
+        </div>
+    </div>
 </section>
 
 
@@ -156,7 +165,7 @@
 
      <div class=" w-full text-start lg:px-32 lg:w-1/2 flex flex-col gap-3 justify-center px-10 h-96">
         <div class="w-full">
-            <div class="grid text-center lg:grid-cols-3 grid-cols-2 gap-4 place-content-end">
+            <div class=" h-full grid text-center lg:grid-cols-3 grid-cols-2 gap-4 place-content-end">
                 <img class=" justify-self-center object-cover w-24 py-10 sm:w-40" src="/assets/images/logos/511.png" alt="">
                 <img class=" justify-self-center object-cover w-24 py-10 sm:w-40" src="/assets/images/logos/altec.png" alt="">
                 <img class=" justify-self-center object-cover w-24 py-10 sm:w-40" src="/assets/images/logos/originalswat.png" alt="">
@@ -172,8 +181,9 @@
 
 
 <section class=" h-[550px] bg-cover bg-center" style="background: url('assets/images/home/bg.jpg')">
-    <div class="w-full">
-
+    <div class="w-full h-full flex flex-col justify-center items-center gap-5 text-white text-center">
+        <h1>Prueba de Campo</h1>
+        <p class="w-[300px] lg:w-[600px] px-10">Todos nuestros productos se ponen a prueba en las condiciones más exigentes y situaciones del mundo real. Las modificaciones y mejoras se realizan en función de los comentarios de los operadores en el campo.</p>
     </div>
 </section>
   
